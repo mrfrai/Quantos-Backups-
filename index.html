@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quantos Back-ups?</title>
+</head>
+<body>
+
+<p>Quantos backups voce tem agora?</p><input id="backups" type="text" name="backups" value="1">   
+<button onclick="vaimlk()">OK</button>
+
+<p>Então você só tem : <h1 id='h1'> </h1></p>
+
+</body>
+<script type="text/javascript">
+
+function vaimlk(){
+
+	var x = document.getElementById("backups").value;
+	var x = x-1;
+	if (x==0){
+		x = "Você se ferrou amigo :("
+	}	else if (x<0){
+		x = "Impossivel amigo. :X"
+	}
+	document.getElementById("h1").innerHTML = x;
+}
+
+
+</script>
+</html>
